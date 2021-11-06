@@ -11,6 +11,10 @@ const defaultSettings = {
 }
 
 const StyledResponsiveGrid = styled.div`
+  * {
+    box-sizing: border-box;
+  }
+
   .container {
     display: flex;
     justify-content: center;
