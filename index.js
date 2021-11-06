@@ -4,7 +4,7 @@ const StyledResponsiveGrid = styled.div`
   .container {
     display: flex;
     justify-content: center;
-    padding: ${({spacing}) => spacing}px;
+    padding: ${({ spacing }) => spacing}px;
   }
 
   .row {
@@ -44,7 +44,7 @@ const StyledResponsiveGrid = styled.div`
     word-spacing: normal;
     vertical-align: top;
     text-rendering: auto;
-    padding: ${({spacing}) => spacing*2}px;
+    padding: ${({ spacing }) => spacing * 2}px;
   }
 
   .hidden-xs {
@@ -103,7 +103,7 @@ const StyledResponsiveGrid = styled.div`
   }
 }
 
-@media all and (min-width: ${${({sm}) => sm}}px) {
+@media all and (min-width: ${({ sm }) => sm}}px) {
   .col-sm-1,
   .col-sm-2,
   .col-sm-3,
@@ -123,7 +123,7 @@ const StyledResponsiveGrid = styled.div`
     word-spacing: normal;
     vertical-align: top;
     text-rendering: auto;
-    padding: ${({spacing}) => spacing*2}px;
+    padding: ${({ spacing }) => spacing * 2}px;
   }
 
   .hidden-sm {
@@ -134,7 +134,7 @@ const StyledResponsiveGrid = styled.div`
   }
 }
 
-@media all and (min-width: ${({md}) => md}px) {
+@media all and (min-width: ${({ md }) => md}px) {
   .col-md-1,
   .col-md-2,
   .col-md-3,
@@ -154,7 +154,7 @@ const StyledResponsiveGrid = styled.div`
     word-spacing: normal;
     vertical-align: top;
     text-rendering: auto;
-    padding: ${({spacing}) => spacing*2}px;
+    padding: ${({ spacing }) => spacing * 2}px;
   }
 
   .hidden-md {
@@ -165,7 +165,7 @@ const StyledResponsiveGrid = styled.div`
   }
 }
 
-@media all and (min-width: ${({lg}) => lg}px) {
+@media all and (min-width: ${({ lg }) => lg}px) {
   .col-lg-1,
   .col-lg-2,
   .col-lg-3,
@@ -185,7 +185,7 @@ const StyledResponsiveGrid = styled.div`
     word-spacing: normal;
     vertical-align: top;
     text-rendering: auto;
-    padding: ${({spacing}) => spacing*2}px;
+    padding: ${({ spacing }) => spacing * 2}px;
   }
   
   .hidden-lg {
