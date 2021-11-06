@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "dist/index.js",
   "scripts:": {
-    "build": "./node_modules/.bin/babel index.js --out-file dist/module.js"
+    "build": "babel index.js --out-file dist/module.js"
   },
   "license": "MIT",
   "devDependencies": {
