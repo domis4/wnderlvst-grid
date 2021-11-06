@@ -1,0 +1,12 @@
+{
+  "name": "wndervlst-grid",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.2.0",
+    "eslint-config-wnderlvst": "domis4/eslint-config-wnderlvst",
+    "@babel/core": "^7.16.0",
+    "@babel/preset-react": "^7.16.0"
+  }
+}
