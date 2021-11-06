@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "type": "module",
   "devDependencies": {
     "eslint": "^8.2.0",
     "eslint-config-wnderlvst": "domis4/eslint-config-wnderlvst",
