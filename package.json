@@ -1,7 +1,7 @@
 {
   "name": "wndervlst-grid",
   "version": "1.0.0",
-  "main": "./dist/module.js",
+  "main": "dist/module.js",
   "scripts:": {
     "build": "babel index.js --out-file dist/module.js"
   },
