@@ -11,6 +11,25 @@ const defaultSettings = {
 
 const isDefined = value => value != null
 
+export const getCurrentBreakpoint = config => {
+  const currentConfig = isDefined(config) ? config : defaultSettings
+  if (window.matchMedia(`(max-width: ${currentConfig.sm}px)`).matches) {
+    return 'xs'
+  }
+  if (window.matchMedia(`(min-width: ${currentConfig.sm}px)`).matches) {
+    return 'sm'
+  }
+  if (window.matchMedia(`(min-width: ${currentConfig.md}px)`).matches) {
+    return 'md'
+  }
+  if (window.matchMedia(`(min-width: ${currentConfig.lg}px)`).matches) {
+    return 'lg'
+  }
+  if (window.matchMedia(`(min-width: ${currentConfig.xl}px)`).matches) {
+    return 'xl'
+  }
+}
+
 const StyledResponsiveGrid = styled.div`
   ${({ sm, md, lg, spacing }) => `
   * {
