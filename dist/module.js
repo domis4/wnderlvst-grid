@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports["default"] = void 0;
+exports.getCurrentBreakpoint = exports["default"] = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
@@ -26,6 +26,32 @@ var defaultSettings = {
 var isDefined = function isDefined(value) {
   return value != null;
 };
+
+var getCurrentBreakpoint = function getCurrentBreakpoint(config) {
+  var currentConfig = isDefined(config) ? config : defaultSettings;
+
+  if (window.matchMedia("(max-width: ".concat(currentConfig.sm, "px)")).matches) {
+    return 'xs';
+  }
+
+  if (window.matchMedia("(min-width: ".concat(currentConfig.sm, "px)")).matches) {
+    return 'sm';
+  }
+
+  if (window.matchMedia("(min-width: ".concat(currentConfig.md, "px)")).matches) {
+    return 'md';
+  }
+
+  if (window.matchMedia("(min-width: ".concat(currentConfig.lg, "px)")).matches) {
+    return 'lg';
+  }
+
+  if (window.matchMedia("(min-width: ".concat(currentConfig.xl, "px)")).matches) {
+    return 'xl';
+  }
+};
+
+exports.getCurrentBreakpoint = getCurrentBreakpoint;
 
 var StyledResponsiveGrid = _styledComponents["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  ", ";\n"])), function (_ref) {
   var sm = _ref.sm,
