@@ -30,24 +30,24 @@ var isDefined = function isDefined(value) {
 var getCurrentBreakpoint = function getCurrentBreakpoint(config) {
   var currentConfig = isDefined(config) ? config : defaultSettings;
 
-  if (window.matchMedia("(max-width: ".concat(currentConfig.sm, "px)")).matches) {
-    return 'xs';
-  }
-
-  if (window.matchMedia("(min-width: ".concat(currentConfig.sm, "px)")).matches) {
-    return 'sm';
-  }
-
-  if (window.matchMedia("(min-width: ".concat(currentConfig.md, "px)")).matches) {
-    return 'md';
+  if (window.matchMedia("(min-width: ".concat(currentConfig.xl, "px)")).matches) {
+    return 'xl';
   }
 
   if (window.matchMedia("(min-width: ".concat(currentConfig.lg, "px)")).matches) {
     return 'lg';
   }
 
-  if (window.matchMedia("(min-width: ".concat(currentConfig.xl, "px)")).matches) {
-    return 'xl';
+  if (window.matchMedia("(min-width: ".concat(currentConfig.md, "px)")).matches) {
+    return 'md';
+  }
+
+  if (window.matchMedia("(min-width: ".concat(currentConfig.sm, "px)")).matches) {
+    return 'sm';
+  }
+
+  if (window.matchMedia("(max-width: ".concat(currentConfig.sm, "px)")).matches) {
+    return 'xs';
   }
 };
 
