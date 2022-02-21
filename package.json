@@ -1,9 +1,9 @@
 {
   "name": "wnderlvst-grid",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/module.js",
   "scripts:": {
-    "build": "babel index.js --out-file dist/module.js"
+    "build": "babel index.js --out-file dist/module.js --mode=\"production\""
   },
   "license": "MIT",
   "devDependencies": {
@@ -13,10 +13,10 @@
     "@babel/preset-env": "^7.16.0",
     "@babel/preset-react": "^7.16.0",
     "eslint": "^8.2.0",
-    "eslint-config-wnderlvst": "domis4/eslint-config-wnderlvst",
     "eslint-plugin-react": "^7.26.1"
   },
   "dependencies": {
+    "eslint-config-wnderlvst": "^1.0.2",
     "react": "^17.0.2",
     "styled-components": "^5.3.3"
   }
